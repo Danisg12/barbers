@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfbfbd;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ee272c;
+    color: #fff;
+    padding: 40px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo img {
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #002538;
+    border: 1px solid #00254d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    padding-top: 0;
+    background-color: #bfbfbd;
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#content-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 120px;
+}
+
+.weekdays th {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+table{
+    /* border:5px solid rgb(151, 180, 243); */
+    box-shadow: 0px 0px 10px 10px rgba(151, 180, 243,0.2);
+    
+}
+ .dias_semana {
+    cursor: pointer;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+   border :1px solid rgb(151, 180, 243);
+   color:black;
+}
+
+#calendar-container {
+    margin: 20px auto; 
+    width: fit-content; 
+}
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+#calendar-container,
+#appointment-form {
+    text-align: center; 
+    
+}
+
+#calendar .day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#calendar .hoy {
+    background-color: rgb(87, 51, 247);
+    color: white;
+}
+
+#appointment-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input, form select, button {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#Sesion {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #002538;
+    border: 1px solid #00254d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.click{
+    background-color: #ffffff;
+    color:rgb(87, 51, 247);
+}
+#tablaCitas{
+    margin-left: 50px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+   border :1px solid rgb(151, 180, 243);
+   color:black;
+}
+#citas{
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+   border :1px solid rgb(151, 180, 243);
+   color:black;
+}
+@media screen and (max-width: 480px) {
+    header .logo {
+        left: 10px;
+    }
+
+    header nav {
+        right: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    header nav ul li a {
+        padding: 8px;
+    }
+
+    main {
+        padding-top: 40px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}

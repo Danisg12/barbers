@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cliente - Barbers Daniel</title>
+        <link rel="stylesheet" href="../css/cliente.css">
+        <script src="../js/jquery/jquery.js"></script>
+        <script src="../js/cliente.js" defer></script>
+    </head>
+    <body class="cliente">
+        <header>
+            <div class="container">
+                <figure class="logo">
+                    <img src="../img/logo.jpg" alt="Logo">
+                </figure>
+                <nav>
+                    <ul>
+                        <li id="Sesion">Bienvenido <span id="user_name"></span></li>
+                        <li id="cerrar_sesion"><a href="#">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            
+            <table id="tablaCitas">
+                <thead>
+                    <tr>
+                       
+                        <th>Servicio</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="content-container">
+                <h2> <span id="user_name"></span></h2>
+                <label for="mes">Mes:</label>
+                <select id="mes"></select>
+                <label for="año">Año:</label>
+                <select id="año"></select>
+                <table id="calendar-container">
+                    <thead>
+                    
+                    </thead>
+                    <tbody id="calendar"></tbody>
+                </table>
+                <div id="appointment-form">
+                    <h2>Agendar Cita</h2>
+                    <form id="appointmentForm">
+                        <label for="barbero">Barbero:</label>
+                        <select id="barbero" name="barbero" required></select>
+                        <label for="fecha">Fecha:</label>
+                        <input type="text" id="fecha" name="fecha" required readonly>
+                        <label for="hora">Hora:</label>
+                        <select id="hora" name="hora" required></select>
+                        <label for="servicio">Servicio:</label>
+                        <select id="servicio" name="servicio" required></select>
+                        <button type="submit">Agendar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Barbers Daniel.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
