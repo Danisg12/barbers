@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfbfbd;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ee272c;
+    color: #fff;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .logo img {
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #002538;
+    border: 1px solid #00254d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #000000;
+}
+
+main {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 30%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+form.registro {
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    background-color: #002538;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 300px;
+}
+
+form.registro fieldset {
+    border: none;
+    padding: 0;
+}
+
+form.registro legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+form.registro .form-group {
+    margin-bottom: 15px;
+}
+
+form.registro label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form.registro input,
+form.registro select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form.registro input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+form.registro button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form.registro button:hover {
+    background-color: #218838;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .logo {
+        left: 10px;
+    }
+
+    header nav {
+        right: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    header nav ul li a {
+        padding: 8px;
+    }
+
+    main {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container,
+    form.registro {
+        max-width: 100%;
+    }
+
+    form.registro {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header .logo {
+        left: 5px;
+    }
+
+    header nav {
+        right: 5px;
+    }
+
+    header nav ul li {
+        margin-left: 5px;
+    }
+
+    header nav ul li a {
+        padding: 6px;
+    }
+
+    main {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container,
+    form.registro {
+        max-width: 100%;
+    }
+
+    form.registro {
+        width: 100%;
+        padding: 10px;
+    }
+}
